@@ -1,0 +1,79 @@
+{
+  "isRoot": true,
+  "endpointType": 0,
+  "minimal": false,
+  "prefix": "app",
+  "idFormat": 0,
+  "idDotNetType": 0,
+  "isMicroserviceArchitecture": false,
+  "projects": [],
+  "rootDirectory": "C:\\projects\\MyBudget",
+  "solutionName": "MyBudget",
+  "solutionFileName": "MyBudget.sln",
+  "apiFullPath": "C:\\projects\\MyBudget\\src\\MyBudget.Api\\MyBudget.Api.csproj",
+  "rootNamespace": "MyBudget",
+  "domainNamespace": "MyBudget.Core",
+  "applicationNamespace": "MyBudget.Core",
+  "infrastructureNamespace": "MyBudget.Infrastructure",
+  "apiNamespace": "MyBudget.Api",
+  "domainDirectory": "C:\\projects\\MyBudget\\src\\MyBudget.SharedKernel",
+  "applicationDirectory": "C:\\projects\\MyBudget\\src\\MyBudget.Core",
+  "infrastructureDirectory": "C:\\projects\\MyBudget\\src\\MyBudget.Infrastructure",
+  "apiDirectory": "C:\\projects\\MyBudget\\src\\MyBudget.Api",
+  "unitTestsDirectory": "C:\\projects\\MyBudget\\tests\\MyBudget.UnitTests",
+  "testingDirectory": "C:\\projects\\MyBudget\\tests\\MyBudget.Testing",
+  "appDirectories": [],
+  "buildingBlocksCoreNamespace": "BuildingBlocks.Core",
+  "buildingBlocksEventStoreNamespace": "BuildingBlocks.EventStore",
+  "sourceFolder": "src",
+  "testFolder": "tests",
+  "dbContextName": "MyBudgetDbContext",
+  "port": 5000,
+  "sslPort": 5001,
+  "plugins": null,
+  "entities": [],
+  "resources": [
+    {
+      "properties": [
+        {
+          "accessModifier": "public",
+          "type": "Guid",
+          "accessors": [
+            {
+              "accessModifier": null,
+              "type": 0
+            },
+            {
+              "accessModifier": "private",
+              "type": 1
+            }
+          ],
+          "name": "CostCenterId",
+          "required": true,
+          "key": true
+        },
+        {
+          "accessModifier": "public",
+          "type": "string",
+          "accessors": [
+            {
+              "accessModifier": null,
+              "type": 0
+            },
+            {
+              "accessModifier": "private",
+              "type": 1
+            }
+          ],
+          "name": "Name",
+          "required": true,
+          "key": false
+        }
+      ],
+      "entities": [],
+      "name": "CostCenter",
+      "idPropertyName": "CostCenterId",
+      "idPropertyType": "Guid"
+    }
+  ]
+}
