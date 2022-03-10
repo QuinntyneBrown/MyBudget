@@ -7,12 +7,12 @@ namespace MyBudget.Infrastructure.Data
     {
         public static void Seed(MyBudgetDbContext context)
         {
-            foreach (var costCenter in new List<CostCenter>()
+            foreach (var costCenter in new List<CostCenter>() 
             {
-                new CostCenter() { Name = "Footlocker" },
-                new CostCenter() { Name = "Shopper Drug Mart" },
-                new CostCenter(){ Name = "Nike Outlet" },
-                new CostCenter() { Name = "LCBO" }
+                new CostCenter("Footlocker", CostCenterCategory.Clothing,false),
+                new CostCenter("LCBO", CostCenterCategory.Recreational,false),
+                new CostCenter("Shoppers Drug Mart", CostCenterCategory.Groceries,true),                
+                new CostCenter("Loblaws", CostCenterCategory.Groceries,true)
             })
             {
                 context.CostCenters.Add(costCenter);

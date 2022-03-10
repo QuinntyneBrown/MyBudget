@@ -255,6 +255,18 @@
     }
   },
   "definitions": {
+    "CostCenterCategory": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "type": "integer"
+    },
     "CostCenterDto": {
       "type": "object",
       "properties": {
@@ -264,6 +276,12 @@
         },
         "name": {
           "type": "string"
+        },
+        "category": {
+          "$ref": "#/definitions/CostCenterCategory"
+        },
+        "isEssential": {
+          "type": "boolean"
         }
       }
     },

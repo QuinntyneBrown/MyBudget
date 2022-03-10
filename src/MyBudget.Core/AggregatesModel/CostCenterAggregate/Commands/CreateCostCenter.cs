@@ -41,11 +41,9 @@ namespace MyBudget.Core
     
         public async Task<CreateCostCenterResponse> Handle(CreateCostCenterRequest request, CancellationToken cancellationToken)
         {
-            var costCenter = new CostCenter();
+            var costCenter = new CostCenter(request.CostCenter.Name, request.CostCenter.Category,request.CostCenter.IsEssential);
             
             _context.CostCenters.Add(costCenter);
-            
-            costCenter.Name = request.CostCenter.Name;
             
             await _context.SaveChangesAsync(cancellationToken);
             

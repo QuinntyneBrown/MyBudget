@@ -1,8 +1,4 @@
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Threading;
 
 namespace MyBudget.Core
 {
@@ -14,6 +10,8 @@ namespace MyBudget.Core
             {
                 CostCenterId = costCenter.CostCenterId.Value,
                 Name = costCenter.Name,
+                Category = costCenter.Category,
+                IsEssential = costCenter.IsEssential,
             };
         }
         

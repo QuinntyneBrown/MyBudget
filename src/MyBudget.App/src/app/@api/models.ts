@@ -1,3 +1,4 @@
+export { CostCenterCategory } from './models/cost-center-category';
 export { CostCenterDto } from './models/cost-center-dto';
 export { CreateCostCenterRequest } from './models/create-cost-center-request';
 export { CreateCostCenterResponse } from './models/create-cost-center-response';

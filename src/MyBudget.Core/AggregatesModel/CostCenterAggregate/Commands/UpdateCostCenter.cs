@@ -43,9 +43,7 @@ namespace MyBudget.Core
         public async Task<UpdateCostCenterResponse> Handle(UpdateCostCenterRequest request, CancellationToken cancellationToken)
         {
             var costCenter = await _context.CostCenters.SingleAsync(x => x.CostCenterId == new CostCenterId(request.CostCenter.CostCenterId.Value));
-            
-            costCenter.Name = request.CostCenter.Name;
-            
+                        
             await _context.SaveChangesAsync(cancellationToken);
             
             return new ()

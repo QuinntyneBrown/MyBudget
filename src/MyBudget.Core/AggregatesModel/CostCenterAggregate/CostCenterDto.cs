@@ -6,5 +6,7 @@ namespace MyBudget.Core
     {
         public Guid? CostCenterId { get; set; }
         public string Name { get; set; }
+        public CostCenterCategory Category { get; set; }
+        public bool IsEssential { get; set; }
     }
 }
