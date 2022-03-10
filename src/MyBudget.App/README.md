@@ -1,4 +1,4 @@
-# 1e2ae5e63c6b4215877fBb68525d2485
+# MyBudget App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
